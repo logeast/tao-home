@@ -1,3 +1,4 @@
+import { Button } from "./Button";
 import { Logo } from "./Logo";
 import NavMenu, { NavMenuProps } from "./NavMenu";
 
@@ -19,8 +20,8 @@ export function Navbar() {
             <NavMenu data={NAV_MENU_DATA} />
           </div>
           <div className="flex items-center gap-4">
-            <button>登录</button>
-            <button>注册</button>
+            <Button>登录</Button>
+            <Button type="primary">注册</Button>
           </div>
         </div>
       </div>
