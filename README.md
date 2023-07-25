@@ -9,6 +9,10 @@
 - border-gray-300 边框、分割线
 - border-gray-200 边框、分割线弱化
 
+- text-pink-600 hover 文字变色
+- bg-gray-100 hover 背景
+
 ## 尺寸
 
 - max-w-screen-xl 内容安全区域
+- px-8 左右留 8 个单位的 padding
