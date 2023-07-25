@@ -10,7 +10,7 @@ export function Button(props: ButtonProps) {
   return (
     <button
       className={cx(
-        "rounded-full transition duration-300 hover:shadow-xl px-8 h-10 flex items-center",
+        "rounded-full transition duration-300 hover:shadow-xl px-8 h-10 flex items-center justify-center",
         {
           "border border-gray-300 bg-white hover:border-pink-600 hover:text-pink-600":
             type === "default",

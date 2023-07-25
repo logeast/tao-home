@@ -13,13 +13,25 @@ const NAV_MENU_DATA: NavMenuProps["data"] = [
 export function Navbar() {
   return (
     <nav className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8">
+      <div className="max-w-screen-xl mx-auto px-8 max-md:hidden">
         <div className="h-16 flex items-center justify-between gap-4">
           <div className="flex items-center gap-8">
             <Logo />
             <NavMenu data={NAV_MENU_DATA} />
           </div>
           <div className="flex items-center gap-4">
+            <Button>登录</Button>
+            <Button type="primary">注册</Button>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto px-8 max-md:visible md:hidden">
+        <div className="h-16 flex items-center justify-between gap-4">
+          <Logo />
+        </div>
+        <div>
+          <NavMenu data={NAV_MENU_DATA} />
+          <div className="py-4 flex flex-col gap-4">
             <Button>登录</Button>
             <Button type="primary">注册</Button>
           </div>

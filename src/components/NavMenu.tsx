@@ -7,9 +7,9 @@ export interface NavLinkProps {
 export function NavLink(props: NavLinkProps) {
   const { url, name } = props;
   return (
-    <li>
+    <li className="max-md:w-full">
       <a
-        className="h-16 flex items-center px-4 transition hover:bg-gray-100 hover:font-medium hover:text-pink-600"
+        className="h-16 max-md:h-10 max-md:rounded-full flex justify-center items-center px-4 transition hover:bg-gray-100 hover:font-medium hover:text-pink-600"
         href={url}
       >
         {name}
@@ -25,7 +25,7 @@ export interface NavMenuProps {
 function NavMenu(props: NavMenuProps) {
   const { data } = props;
   return (
-    <ul className="flex items-center">
+    <ul className="flex items-center max-md:flex-col">
       {data.map((item: NavLinkProps) => (
         <NavLink {...item} />
       ))}
